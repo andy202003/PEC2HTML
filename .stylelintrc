@@ -1,0 +1,18 @@
+ {
+  "plugins": [
+      "@namics/stylelint-bem"
+   
+  ],
+   "extends": "stylelint-config-recommended-scss",
+  "rules": {
+     "plugin/stylelint-bem-namics": {
+    "patternPrefixes": [],
+      "helperPrefixes": []
+    },    
+       "block-no-empty":true,
+      "comment-no-empty":true,
+      "max-empty-lines":2,
+      "indentation":2,
+      "max-line-length":80
+  }
+}
