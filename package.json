@@ -8,7 +8,7 @@
     "parcel:build": "parcel build src/index.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean stylelint parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
     "stylelint": "stylelint src/**/*.scss"
   },
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
-    "@namics/stylelint-bem": "^6.3.1",
     "autoprefixer": "^10.2.3",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0-nightly.566",

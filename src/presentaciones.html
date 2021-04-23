@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="assets/styles/main.scss" />
 
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>UOC Boilerplate PEC2</title>
     </head>
 
     <body>
@@ -39,6 +39,14 @@
                                 <a
                                     class="nav-link"
                                     aria-current="page"
+                                    href="index.html"
+                                    >INICIO</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
                                     href="integrantes.html"
                                     >INTEGRANTES</a
                                 >
@@ -61,12 +69,12 @@
             </nav>
         </header>
         <main class="content">
-            <div class="banner">
-                <div class="container">
+            <div>
+                <div>
                     <h1 class="text-center">Presentaciones</h1>
                     <div
                         id="carouselExampleControls"
-                        class="carousel slide"
+                        class="carousel slide card w-50"
                         data-bs-ride="carousel"
                     >
                         <div class="carousel-inner">
@@ -74,14 +82,14 @@
                                 <img
                                     src="assets/images/hist1.jpg"
                                     class="d-block w-100"
-                                    alt="..."
+                                    alt="imagen2"
                                 />
                             </div>
                             <div class="carousel-item">
                                 <img
                                     src="assets/images/hist3.jpg"
                                     class="d-block w-100"
-                                    alt="..."
+                                    alt="imagen2"
                                 />
                             </div>
                             <div class="carousel-item">
@@ -156,6 +164,7 @@
                     Concierto realizado en Riverdale
                 </figcaption>
             </figure>
+
             <p class="center">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -183,8 +192,8 @@
             </p>
             <h2 class="text-center">Fechas de próximos conciertos</h2>
             <div class="container">
-                <div class="lista">
-                    <ol class="list-group list-group-numbered text-center">
+                <div class="card w-50">
+                    <ol class="list-group list-group-numbered">
                         <li
                             class="list-group-item d-flex justify-content-between align-items-center list-group-item-secondary"
                         >
@@ -193,6 +202,9 @@
                                 Parque Bicentenario
                                 <div>6:00pm</div>
                             </div>
+                            <span class="badge bg-primary rounded-pill"
+                                ><i class="fas fa-star"></i
+                            ></span>
                         </li>
                         <li
                             class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning"
@@ -202,6 +214,9 @@
                                 Parque Carolina
                                 <div>4:00pm</div>
                             </div>
+                            <span class="badge bg-primary rounded-pill"
+                                ><i class="fas fa-star"></i
+                            ></span>
                         </li>
                         <li
                             class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark"
@@ -211,12 +226,16 @@
                                 Coliseo Rimuñahui
                                 <div>8:00pm</div>
                             </div>
+                            <span class="badge bg-primary rounded-pill"
+                                ><i class="fas fa-star"></i
+                            ></span>
                         </li>
                     </ol>
                 </div>
             </div>
             <h2 class="text-center">Nuestro mantra</h2>
-            <blockquote>
+
+            <blockquote class="blockquote">
                 “La música expresa lo que no puede ser dicho y aquello sobre lo
                 que es imposible permanecer en silencio”
                 <cite>Victor Hugo</cite>
@@ -290,6 +309,7 @@
             </nav>
         </footer>
         <script src="./assets/scripts/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!-- do not remove this line! -->
     </body>
 </html>

@@ -1,38 +1,40 @@
 .foto-concert {
   display: block;
   text-align: center;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
-  background-color: black;
-  color: #f0f0f0;
-  width: 30%;
+  background-color: $colorTheme;
+  color: $form-color;
 }
 
-.lista {
-  width: max-content;
+.card {
   margin-left: auto;
   margin-right: auto;
 }
 
-.banner {
-  width: 40%;
-  margin: 0 auto;
-}
-
 .concert-img {
   width: 40%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  &:hover {
+    filter: grayscale(80%);
+  }
 }
 
 .text-center {
   padding-top: 30px;
 }
-blockquote {
-  background: #b5abec;
-  border-left: 10px solid #ccc;
-  width: 40%;
+.blockquote {
+  background: $quote-color;
+  border-left: 10px solid $form-color;
+  width: 100%;
   margin: auto;
   padding: 0.5em 10px;
+  margin-bottom: 20px;
   margin-top: 20px;
-  font-family: "Brush Script MT";
+  font-family: $font-quote;
   font-size: 30px;
+  &:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
 }

@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.image-grid {
+.integrantes {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -11,7 +11,7 @@
   background-color: $bodycolor;
 }
 
-.grid-image {
+.integrantes_image {
   display: block;
   flex-basis: 100%;
   padding: 10px;
@@ -30,35 +30,47 @@
     0% 85%
   );
 
-  background-color: black;
-}
-
-@media only screen and (min-width: 640px) {
-  .grid-image {
+  background-color: $colorTheme;
+  @media only screen and (min-width: 640px) {
     flex-basis: 50%;
   }
-}
-
-@media only screen and (min-width: 960px) {
-  .grid-image {
+  @media only screen and (min-width: 960px) {
     flex-basis: 33.333%;
   }
-}
-@media only screen and (min-width: 1280px) {
-  .grid-image {
+  @media only screen and (min-width: 1280px) {
     flex-basis: 25%;
   }
-}
-
-@media only screen and (min-width: 1600px) {
-  .grid-image {
+  @media only screen and (min-width: 1600px) {
     flex-basis: 20%;
   }
 }
-.imagen-integrantes {
-  background-color: black;
-  color: white;
+.integrantes_nombre {
+  background-color: $colorTheme;
+  color: $form-color;
   font-style: italic;
   padding: 2px;
   text-align: center;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 25px;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
 }

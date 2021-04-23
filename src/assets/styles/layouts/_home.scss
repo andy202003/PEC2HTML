@@ -4,18 +4,20 @@
   box-sizing: border-box;
 }
 
-sup {
-  font-size: 0.6em;
-}
-
 .text-bold {
   font-weight: bold;
   color: $form-color;
 }
 
+#youtube-audio {
+  background-color: $color-play;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin-bottom: auto;
+}
 .grid {
   background: $colorTheme;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-family-serif;
   font-size: 20px;
   font-weight: 300;
   min-height: 100vh;
@@ -23,7 +25,7 @@ sup {
   text-transform: uppercase;
 }
 
-.grid span {
+.span {
   display: block;
 }
 
@@ -45,7 +47,7 @@ sup {
 }
 
 .title--secondary .text-bold {
-  font-size: max(6vw, 40px);
+  font-size: max(8vw, 40px);
 }
 
 .title--primary .text-bold {
@@ -67,11 +69,9 @@ sup {
   @supports (display: grid) {
     .grid {
       display: grid;
-      grid-gap: 2em;
-      grid-template-rows: minmax(1em, auto) max-content 1fr 3em minmax(
-          1em,
-          auto
-        );
+      grid-template-rows:
+        minmax(1em, auto)
+        max-content 1fr 3em minmax(1em, auto);
       grid-template-columns: 4fr repeat(4, 1fr) 4fr;
       grid-gap: 0 10px;
       height: 100vh;
@@ -97,20 +97,21 @@ sup {
       grid-column: 1/2;
       align-self: flex-end;
     }
+
+    #youtube-audio {
+      grid-row: 3;
+      grid-column: 6;
+    }
   }
 }
-
 /*background animation*/
-
 .content {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 20px;
   width: 100%;
-}
-
-.content {
   background: linear-gradient(-45deg, #c9ec89, #e9463a, #b4b8b9, #917ba3);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -125,28 +126,5 @@ sup {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-.center {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 25px;
-  width: 100%;
-
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
-  @media (min-width: 768px) {
-    max-width: 720px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1140px;
   }
 }

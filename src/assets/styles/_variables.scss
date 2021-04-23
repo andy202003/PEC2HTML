@@ -5,19 +5,27 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Trebuchet MS", "Arial", "Helvetica", "sans-serif";
 
-$colorTheme: black;
+$font-quote: "Brush Script MT", Arial, sans-serif;
+
+$colorTheme: #000000;
 
 $theme-colors: (
   "primary": #240c50,
-  "secondary": red,
-  "warning": green,
-  "dark": brown,
+  "secondary": #ff0000,
+  "warning": #008000,
+  "dark": #a52a2a,
 );
-$bodycolor: gray;
+
+$card-border-color: #1714bb;
+$navbar-dark-color: #b6c218;
+
+$bodycolor: #808080;
 
 $form-color: #fcf9f6ef;
+$quote-color: #b5abec;
 
 $btn-hover-bg-shade-amount: 60%;
 $contact-button: #3e3e3e;
 $contact-color: #fff;
 $btn-button: #240c50;
+$color-play: #b6c218;
