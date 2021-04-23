@@ -34,7 +34,7 @@
   font-family: $font-quote;
   font-size: 30px;
   &:hover {
-    background-color: #3e8e41;
-    color: white;
+    background-color: $quote-color-hover;
+    color: $form-color;
   }
 }
