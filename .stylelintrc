@@ -1,7 +1,5 @@
  {
   "plugins": [
-      "@namics/stylelint-bem"
-   
   ],
    "extends": "stylelint-config-recommended-scss",
   "rules": {
