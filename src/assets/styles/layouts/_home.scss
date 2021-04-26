@@ -4,17 +4,10 @@
   box-sizing: border-box;
 }
 
-.text-bold {
-  font-weight: bold;
-  color: $form-color;
-}
+/*------------------------------------*\
+  #Poster de la página
+\*------------------------------------*/
 
-#youtube-audio {
-  background-color: $color-play;
-  width: fit-content;
-  padding-bottom: 10px;
-  margin-bottom: auto;
-}
 .grid {
   background: $colorTheme;
   font-family: $font-family-serif;
@@ -29,21 +22,28 @@
   display: block;
 }
 
+@mixin my-web-color() {
+  color: $form-color;
+}
+
 .title--primary {
   z-index: 2;
+  animation: color-change 3s infinite;
+  @include my-web-color();
+}
+
+.title--secondary {
+  text-align: right;
+  @include my-web-color();
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .cover-img {
   height: 100%;
   object-fit: cover;
-}
-
-.color-white {
-  color: $form-color;
-}
-
-.title--secondary {
-  text-align: right;
 }
 
 .title--secondary .text-bold {
@@ -59,11 +59,40 @@
   margin: 0;
   padding: 0;
   padding-top: 50px;
+  @include my-web-color();
 }
 
 .info-lista {
   margin-top: 1em;
 }
+
+@keyframes color-change {
+  0% {
+    color: #ff0000;
+  }
+  50% {
+    color: #5615cf;
+  }
+  100% {
+    color: #fffb00;
+  }
+}
+
+/*------------------------------------*\
+  #Reproductor de youtube
+\*------------------------------------*/
+
+#youtube-audio {
+  background-color: $color-play;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin-bottom: auto;
+  font-style: italic;
+}
+
+/*------------------------------------*\
+  #Media queries aplicados a grid
+\*------------------------------------*/
 
 @media (min-width: 860px) {
   @supports (display: grid) {
@@ -104,7 +133,11 @@
     }
   }
 }
-/*background animation*/
+
+/*------------------------------------*\
+  #background animation
+\*------------------------------------*/
+
 .content {
   margin-right: auto;
   margin-left: auto;

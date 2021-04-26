@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #Puzzle
+\*------------------------------------*/
+
 #btnsCover {
   margin: 30px auto;
   text-align: center;
@@ -29,23 +33,44 @@
 }
 
 #cover {
-  width: 496px;
-  height: 496px;
-  margin: auto;
   background-color: #323232;
+  margin: auto;
   border-radius: 2px;
   &:after {
     content: "";
     clear: both;
     display: block;
     height: 0px;
-    visibility: hidden;
+  }
+  @media (min-width: 992px) {
+    width: 496px;
+    height: 496px;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 496px;
+    height: 496px;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: 496px;
+    height: 496px;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    width: 496px;
+    height: 496px;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    width: 496px;
+    height: 496px;
   }
 }
 
 .img {
-  width: 120px;
-  height: 120px;
   float: left;
   padding: 2px;
   cursor: pointer;
@@ -53,6 +78,30 @@
   top: 0px;
   position: relative;
   transition: 0.1s ease transform;
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .img.blank {
@@ -63,13 +112,37 @@
   transform: scale(0.97);
 }
 
-.img img {
-  display: block;
+.hidden {
+  visibility: hidden;
+  @media (min-width: 992px) {
+    visibility: visible;
+  }
+  @media only screen and (min-width: 600px) {
+    visibility: visible;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    visibility: visible;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    visibility: visible;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    visibility: visible;
+  }
 }
+/*------------------------------------*\
+  #Formulario de contacto
+\*------------------------------------*/
 
 .formulario {
-  width: 496px;
-  height: 496px;
+  width: 100%;
+  // height: 496px;
   margin: auto;
   padding: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
@@ -98,12 +171,11 @@
 
 .contenedor {
   background-color: $form-color;
-  width: 496px;
-  height: 496px;
   margin: auto;
   padding-top: 20px;
 
   @media (min-width: 992px) {
+    width: 496px;
     margin: 0%;
     margin-top: 120px;
   }

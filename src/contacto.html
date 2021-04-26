@@ -74,17 +74,18 @@
                         class="formulario"
                         method="POST"
                         data-netlify="true"
-                    >
+                    > 
                         <h1 class="formulario__titulo formulario__skin">
                             Contáctanos
                         </h1>
+                       
                         <div class="form-floating mb-3">
-                            <textarea
+                            <input
                                 name="name"
                                 class="form-control"
-                                placeholder="Leave a comment here"
                                 id="floatingTextarea"
-                            ></textarea>
+                                placeholder="nombres"
+                            ></input>
                             <label for="floatingTextarea">Nombres</label>
                         </div>
                         <div class="form-floating mb-3">
@@ -100,21 +101,21 @@
                             >
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea
+                            <input
                                 name="number"
                                 class="form-control"
-                                placeholder="Leave a comment here"
                                 id="floatingTextarea"
-                            ></textarea>
+                                placeholder="number"
+                            ></input>
                             <label for="floatingTextarea">Número</label>
                         </div>
                         <div class="form-floating mb-3">
                             <textarea
                                 name="comment"
                                 class="form-control"
-                                placeholder="Leave a comment here"
                                 id="floatingTextarea2"
                                 style="height: 100px"
+                                placeholder="comentarios"
                             ></textarea>
                             <label for="floatingTextarea2">Comentarios</label>
                         </div>
@@ -124,11 +125,13 @@
                     </form>
                 </div>
                 <div>
-                    <h2 class="text-center">O Juega nuestro puzzle</h2>
+                    <div class="hidden">
+                   
                     <div id="btnsCover">
+                        <h2 class="text-center">O Juega nuestro puzzle</h2>
                         <button id="shuffleBtn">Shuffle</button>
                         <button id="restartBtn">Restart</button>
-                        <div id="cover"></div>
+                        <div id="cover"></div></div>
                     </div>
                 </div>
             </div>
@@ -200,8 +203,9 @@
                 </div>
             </nav>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="./assets/scripts/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./assets/scripts/puzzle.js"></script>
         <!-- do not remove this line! -->
     </body>
 </html>
